@@ -1,34 +1,33 @@
+//Akmal Adli Ariffin
+//A17DW0074
 //compare two strings
 //complete the program below. 
 
 #include <iostream>
+#include <string>
 
-int main()
-{
-
-	string myName="Mike";//write your name there.
+int main() {
+	string myName ="Adly";//write your name there.
+	string userName;
+	
 	//make a while loop until user input 'quit' to exit/end the program
-
-	(true)
-	{
-		
-		string userName;
+	while(true) {
 		//get the user input for string.
-		if(userName=="Abu")
-	       	{
-			cout<<"Hey Abu!"<<endl;
+		cout << "Input: ";
+		getline(cin, userName);
+		
+		if(strcmp(userName, myName) != 0) {
+			cout<<endl<<"Hey" << myName << "!"<<endl;
 		}
-		else if(userName=="quit")
-		{
-			cout<<endl;
+		
+		else if(strcmp(userName, "quit") != 0) {
+			cout<< endl << "Press any key to exit";
 			break;
 		}
-		else
-		{
-			cout<<"Aha! its "<<myName<<endl;
+		
+		else {
+			cout<<endl<<"Aha! its "<<myName<<endl;
 		}
 	}
 	return 0;
 }
-
-
